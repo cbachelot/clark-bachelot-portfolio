@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACA,SAAS;AAOT,SAAS;AAQT,SAAS;AAOT,SAAS",
-    "sources": [
-        "variables.scss"
-    ],
-    "names": [],
-    "file": "variables.css"
-}
