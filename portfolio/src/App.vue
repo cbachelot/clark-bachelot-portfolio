@@ -12,16 +12,24 @@
       >
   <router-view></router-view>
   </transition>
+  <my-footer></my-footer>
   </div>
+
 </template>
 
 <script>
+
+import Footer from './components/Footer'
+
 export default {
   name: 'App',
   data () {
     return {
       prevHeight: 0
     }
+  },
+  components: {
+    'my-footer': Footer
   },
   methods: {
     beforeLeave (element) {

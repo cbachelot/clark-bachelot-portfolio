@@ -10,6 +10,7 @@ import VueRouter from 'vue-router'
 import Hello from './components/HelloWorld'
 // import the about component
 import About from './components/About'
+
 // define your routes
 const routes = [
   // route for the home route of the web page
@@ -35,7 +36,8 @@ new Vue({
   // pass the template to the root component
   template: '<App/>',
   // declare components that the root component can access
-  components: { App },
+  components: {
+    App },
   // pass in the router to the Vue instance
   router
 }).$mount('#app')// mount the router on the app
