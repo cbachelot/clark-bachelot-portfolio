@@ -1,17 +1,6 @@
 <template>
   <div id="app">
-  <!-- the router outlet, where all matched components would ber viewed -->
-  <router-link v-bind:to="'/'">Home</router-link>
-  <router-link v-bind:to="'/about'">About</router-link>
-  <transition
-        name="fade"
-        mode="out-in"
-        @beforeLeave="beforeLeave"
-        @enter="enter"
-        @afterEnter="afterEnter"
-      >
-  <router-view></router-view>
-  </transition>
+  <my-nav></my-nav>
   <my-footer></my-footer>
   </div>
 
@@ -20,6 +9,7 @@
 <script>
 
 import Footer from './components/Footer'
+import Nav from './components/Nav'
 
 export default {
   name: 'App',
@@ -29,7 +19,8 @@ export default {
     }
   },
   components: {
-    'my-footer': Footer
+    'my-footer': Footer,
+    'my-nav': Nav
   },
   methods: {
     beforeLeave (element) {
