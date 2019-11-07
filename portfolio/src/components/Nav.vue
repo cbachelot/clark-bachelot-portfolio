@@ -1,19 +1,8 @@
 <!-- the router outlet, where all matched components would ber viewed -->
 <template>
   <div id="nav">
-  <div id="nav-cont">
   <router-link v-bind:to="'/'">Home</router-link>
   <router-link v-bind:to="'/about'">About</router-link>
-  </div>
-  <transition
-        name="fade"
-        mode="out-in"
-        @beforeLeave="beforeLeave"
-        @enter="enter"
-        @afterEnter="afterEnter"
-      >
-  <router-view></router-view>
-  </transition>
   </div>
 </template>
 
@@ -31,8 +20,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-#nav-cont {
-    text-align: left;
 }
 </style>

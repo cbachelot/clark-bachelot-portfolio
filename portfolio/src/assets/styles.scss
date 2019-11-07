@@ -1,0 +1,45 @@
+@import "variables.scss";
+
+/*
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Lexend Exa', sans-serif;
+font-family: 'Lexend Giga', sans-serif;
+font-family: 'Lexend Mega', sans-serif;
+font-family: 'Lexend Zetta', sans-serif;
+font-family: 'Lexend Tera', sans-serif;
+font-family: 'Lexend Peta', sans-serif;
+*/
+
+body {
+  background-color: $cb-white;
+  color: $cb-altblue;
+  font-family: 'Lexend Deca', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1{
+  font-size: 32px;
+  font-weight: 400;
+}
+
+#site-header {
+  width: 100%;
+  height: 50px;
+  background-color: $cb-black;
+}
+
+.social-icons {
+  display: inline-block;
+}
+
+.social-icons img {
+  margin-right: 15px;
+  opacity: 0.5;
+}
+
+.social-icons img:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}

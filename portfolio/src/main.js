@@ -41,3 +41,6 @@ new Vue({
   // pass in the router to the Vue instance
   router
 }).$mount('#app')// mount the router on the app
+
+// Require the global styles
+require('./assets/styles.css')

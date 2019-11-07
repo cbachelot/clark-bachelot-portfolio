@@ -1,6 +1,16 @@
 <template>
   <div id="app">
   <my-nav></my-nav>
+    <transition
+        name="fade"
+        mode="out-in"
+        @beforeLeave="beforeLeave"
+        @enter="enter"
+        @afterEnter="afterEnter"
+      >
+  <router-view></router-view>
+  </transition>
+
   <my-footer></my-footer>
   </div>
 
